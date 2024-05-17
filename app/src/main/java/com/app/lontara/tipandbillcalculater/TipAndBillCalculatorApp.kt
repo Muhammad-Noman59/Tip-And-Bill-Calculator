@@ -1,5 +1,6 @@
 package com.app.lontara.tipandbillcalculater
 
+import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -150,6 +151,7 @@ fun UserInputArea(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
+                .animateContentSize()
                 .padding(12.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
